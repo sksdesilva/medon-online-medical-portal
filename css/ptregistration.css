@@ -1,0 +1,87 @@
+.form{
+    margin-left: 200px;
+    width: 70%;
+}
+
+form{
+    background-color: aquamarine;
+}
+
+input,select,textarea{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+label,.form>input{
+    display: block;
+    margin-left: 10px;
+}
+
+
+label{
+    
+    margin-top: 5px;
+    margin-bottom: 2px;
+
+}
+.single_line>label,.form>input{
+    display: inline;
+}
+.single_line>label{
+    margin-right: 20px;
+
+}
+
+#fname,#emailad{
+    width:700px;
+}
+
+.nextbut{
+    margin-left: 300px;
+}
+
+/* patient portal css*/
+
+.butt>#btn1>a{
+    text-decoration: none;
+    color:blue;
+}
+
+.nextbut input[type="submit"]
+{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+	cursor: pointer;
+	background-color:#124dd9;
+	font-weight: bold;
+    margin-right: 50px;
+	font-size: 18px;
+	border: none;
+	color: #fff;
+
+}
+
+.nextbut input[type="reset"]{
+
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+	cursor: pointer;
+	background-color:#259e11;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	color: #fff;
+
+}

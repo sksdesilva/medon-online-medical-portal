@@ -1,0 +1,82 @@
+*
+.body{
+    margin: 0px;
+    padding: 0px;
+
+}
+.login form h2
+{
+    text-align:center;
+}
+.login form
+{
+    width:420px;
+    height:500px;
+    margin-top: 520px;
+    margin-left: 520px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color:lavender;
+    color:thistle;
+    box-sizing:border-box;
+}
+
+.login form p
+{
+    margin:10px;
+    padding-top: 3px;
+    font- weight: 400;
+    font-size: 15px;
+}
+
+.login form input
+{
+    width:100%;
+    margin-bottom: 20px;
+    border:darkgray;
+    height: 40px;
+    padding:5px;
+
+}
+.login image
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 1px;
+    margin-top: -50;
+    
+}
+
+.login form input[type=text],input[type="password"]
+{
+    background:floralwhite;
+    font-weight: 250;
+    font-size: 16px;
+    border:none;
+    border-bottom: 1px;
+    background:honeydew;
+    color:azure;
+}
+
+.login form input[type="submit"]
+{
+    background-color:azure;
+    font-size: 16px;
+    font-weight:bold;
+    color:azure;
+    cursor:pointer;
+}
+.login form a
+{
+    line-height: 20px;
+    text-decoration:non;
+    font-size:15px;
+    curser:pointer;
+    font-weight: 100;
+}
+.login form a: hover
+{
+    text-decoration: underline;
+    color:yellow;
+}
