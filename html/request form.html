@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Medon online medical portal </title>
+<link rel="stylesheet" href="../css/request form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <h1>
+        <center><img src="../images/logo.png" width="250px;" height="80px;"></center>
+    </h1>
+<div class="menu-bar">
+ 
+
+<ul> 
+<li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-address-book"></i> About Us </a></li>
+<li><a href="#"><i class="fa fa-circle"></i> Services</a>
+<div class="sub-menu-1">
+<ul>
+    <li><a href="#">Doc-chenneling</a></li>
+    <li><a href="#">Lab report</a></li>
+    <li><a href="#">Ambulance service</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><i class="fa fa-commenting-o"></i> Reviews </a> </li>
+
+<li><a href="#"><i class="fa fa-phone"></i> Contact</a>  </li>
+</ul>
+</div>
+</br>
+<br>
+<!--footer start-->
+<div class="ambulance_login_form">
+    <h2>Ambulance Service Request Form</h2>
+    <form action="../php/ambulanceform.php" method="POST">
+        <div class="request_form">
+            <p1>Patient name :</p1>
+            <input type="text" name="first_name" placeholder="Enter first name" required>
+            <input type="text" name ="second_name" placeholder="Enter second name"><br><br>
+            <p2>Date & time request :</p2>
+            <input type="date" placeholder="Date and time" name="date"required><br><br>
+            <p3>E-mail address :
+            <input type="email" name="E_mail" placeholder="E-mail"required><br><br>
+            <p4>Phone number :</p4>
+            <input type="tel"name="phone_number" placeholder="Phone number" required><br><br>
+            <p12>ID number</p12>
+            <input type="text" name="ID" placeholder="ID number"><br><br>
+            <p5>Pickup address :</address></p5><br>
+            <textarea id="address" name="Saddress1" placeholder="address"required rows="4" cols="70"></textarea>
+            <br>
+            
+    
+            <p6>Destination hospital :</p6><br>
+
+            <textarea id="address" name="dthospital" placeholder="hospital name"required rows="2" cols="30"></textarea>
+
+            <br><br>
+            <p7>Social security number :</p7>
+            <input type="text" name="SS_number" placeholder="Social security number"required><br><br>
+            <p8>Gender :</p8>
+            <input type="radio" name="gender" value="m" required >Male
+            <input type="radio" name="gender" value="f">Female<br><br>
+            <p11>Date of birth :</p11>
+            <input type="date"name="DT" placeholder="Date of birth"required><br><br>
+            <p9>What is the requester's relationship to the patient ?</p9><br>
+            <input type="radio" name="text" value="sp"required>Self / patient.<br>
+            <input type="radio" name="text" value="pg">Parents / Guardian.<br>
+            <input type="radio" name="text"value="ea">Exeutor / Administrator of estate.<br>
+            <input type="radio" name="text" value="o">Other.<br><br>
+            <div class="width">
+              <p10>Patient medical condition :</p10><br>
+              <input type="text" name="conditionnn" placeholder="Enter the condition" required><br><br>
+              <p10>Reson for ambulance service request :</p10><br>
+              <input type="text" name="reson" placeholder="Enter the reson for ambulance service request"required><br><br>
+              <p10>Aditional note :</p10><br>
+              <input type="text" name="Aditional" placeholder="Aditional Note"><br><br>
+           </div>
+           <div class="submit">
+            <input type="Submit" value="Submit"><br><br>
+            <center><img src="../images/logo.png" width="320px;" height="100px;"></center>
+
+        </div>
+
+        </div>
+
+    </form>
+</div>
+
+
+
+
+
+<!--footer start-->
+
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <a href ="#">Blog</a>
+            <a href ="#">Privacy policy</a>
+            <a href ="#">Doc-chenneling</a>
+            <a href ="#">Lab Service</a>
+            <a href ="#">Ambulance service</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <h4>Phone numbers:</h4>
+            <h4>+94(0)11 2277810</h4>
+            <h4>+94(0)11 2277810</h4>
+            <h4>E-mail:</h4>
+            <a href="mailto:Contact@medon.lk" style="color:blue;">Contact@medon.lk</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social media</h2>
+            <a href ="#">Instragram</a>
+            <a href ="#">Linkedin</a>
+            <a href ="#">Youtube</a>
+            <a href ="#">Twitter</a>
+            <a href ="#">Facebook</a>
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="enter your email" id="footer-email">
+            <input type="submit" value="sign up" id="footer-email-btn">
+        </div>
+        <center><h4>&copy MEDON PVT LTD. ALL RIGHTS RESERVED.</br>DEVELOPED BY MEDON </h4></center>
+    </div>
+    
+</div>
+</body>
+</html>

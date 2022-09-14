@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> WEBSITE WITH the MENUBAR </title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel ="stylesheet" href="../css/ptregistration.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../javascript/script.js"></script>
+</head>
+<body>
+    
+        <center><img src="../images/logo.png" width="250px;" height="80px;"></center>
+<div class="menu-bar">
+ 
+
+<ul> 
+<li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-address-book"></i> About Us </a></li>
+<li><a href="#"><i class="fa fa-circle"></i> Services</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="#">Doc-chenneling</a></li>
+<li><a href="#">Lab report</a></li>
+<li><a href="#">Ambulance service</a></li>
+</ul>
+</div>
+</li>
+
+<li><a href="Support Services.html"><i class="fa fa-commenting-o"></i> Help desk </a> </li>
+
+<li><a href="#"><i class="fa fa-phone"></i> Contact</a>  </li>
+</ul>
+</div>
+</br>
+</br></br>
+
+
+
+<div class = "form">
+    <h1><center>Patient Registration Form</center></h1>
+    <br>
+
+
+    <form method="post"  action="../php/Pregister.php">
+        <fieldset>
+        <legend>Personnel Details</legend>
+
+        <label> Full Name of the patient :</label>
+        
+        <input type="text" id="fname" name="fname" required>
+        
+
+        <label>Date of birth : </label>
+        
+        <input type="date" id="dob" name="dob" required>
+        
+        
+        <label>Gender :</label> 
+        
+        <div class="single_line">
+        <input type="radio" id="male" value="Male" name="rd1">
+        <label>Male</label>
+        <input type="radio" id="female" value="Female"  name="rd1">
+        <label>Female</label>
+    </div>
+        
+
+        <label>National identity card number</label>
+        
+        <input type="text" id="nic" name="nic" required>
+        
+
+        <label>Permanent address</label>
+        
+        <textarea id="address" name="address" rows="4" cols="100" required></textarea>
+        
+        <label>Province</label>
+        <select name="province" id="province" >
+           <option value="Southern Province">Southern Province</option>
+           <option value="Western Province">Western Province</option>
+           <option value="Central Province"> Central Province</option>
+           <option value="Uva Province">Uva Province</option>
+           <option value="Sabaragamuwa Province">Sabaragamuwa Province</option>
+           <option value="North Western Province"> North Western Province</option>
+           <option value="North Central Province">North Central Province</option>
+           <option value="Nothern Province">Nothern Province</option>
+           <option value="Eastern Province">Eastern Province</option>
+        </select>
+        
+
+        <label>Contact details</label>
+        <input type="number" id="contact" placeholder="0111231234" name="contact" required>
+        
+        <label>Maritial state:</label>
+        
+        <div class="single_line">
+        <input type="radio" id="m_s" value = "Single" name="rd2" checked>
+        <label>Single</label>
+        <input type="radio" id="m_s" value = "Married" name="rd2">
+        <label>Married</label>
+        </div>
+        
+
+        <fieldset>
+
+        <legend>Personnel health details</legend>
+        <label>History of past illeness</label>
+        
+        <textarea id = "history" rows="3" cols="100" name="pthistory" placeholder="Hypertension , Cardiovascular Disease , Diabetes Mellitus , Osteoporosis , etc.." required></textarea>
+        
+        <label>Blood type</label>
+        <select name="bloodtype" id="BType">
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="AB-">AB-</option>
+            <option value="O-">O-</option>
+        </select>
+        <label>Have you ever had (Please check all that you have)</label>
+        
+
+        <div class="single_line">
+
+        <input type="hidden" id="emg_case1" name="emg_case1" value="NO">
+        <input type="checkbox" id="emg_case1" name="emg_case1" value="YES" onchange="document.getElementById('emg_cases').disabled = !this.checked;"/>
+        <label for="emg_case1"> Any type of allergy</label>
+
+        <input type="hidden" id="emg_case2" name="emg_case2" value="NO">
+        <input type="checkbox" id="emg_case2" name="emg_case2" value="YES" onchange="document.getElementById('emg_cases').disabled = !this.checked;"/>
+        <label for="emg_case2"> Any type Kidney Failure</label>
+
+        <input type="hidden" id="emg_case3" name="emg_case3" value="NO">
+        <input type="checkbox" id="emg_case3" name="emg_case3" value="YES" onchange="document.getElementById('emg_cases').disabled = !this.checked;"/>
+        <label for="emg_case3"> Any type Liver Failure</label>
+
+        </div>
+        <br>
+        <label>Briefly expalin about above checked situations </label>
+        
+        <textarea name="emg_cases" id="emg_cases" rows="5" cols="100" disabled></textarea>
+        
+        <br>
+        <label>If you are currently taking any medicine </label>
+        
+        
+        <div class="single_line">
+        <input type="radio" id="MYes" name="medicines" value="YES" onclick="document.getElementById('cur_medicines').disabled=!this.checked;">
+        <label>Yes</label>
+        <input type="radio" id="Mno" name="medicines" value="NO" checked>
+        <label>No</label>
+        <br>
+        
+        <label>Write the list of medicines currently you are taking</label>
+        <br>
+        
+
+        <input type="hidden" id="emg_cases" name="cumedicines" value="NO">
+        <textarea id="cur_medicines" name="cumedicines" rows="5" cols="100" disabled placeholder="Example: Digene - 400mg , Cholaramphenicol - 2.5mg , etc.."></textarea>
+        
+    </div>
+
+        
+        <fieldset>
+
+      <legend>Login credentials</legend>
+      <div class="logging">
+          <label>Email</label>
+          
+          <input type="email" id="emailad" name="ptemail" required >
+          
+          <label>Password</label>
+          
+          <input type="password" id="pwd1" name="ptpassword"  onkeyup='check();' required>
+          
+          <label>Confirm Password</label>
+          
+          <input type="password" id="pwd2" onkeyup='check();' required>
+          <span id='msg'></span>
+      </div>
+
+   
+    <div class="nextbut">
+        <input type="submit"  value="Submit" name="submit">
+        <input type="reset" value="Reset" name="reset">
+    </div>
+</fieldset>
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+</div>
+
+<br>
+<br>
+
+
+
+
+
+
+
+<!--footer start-->
+
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <a href ="#">Blog</a>
+            <a href ="#">Privacy policy</a>
+            <a href ="#">Doc-chenneling</a>
+            <a href ="#">Lab Service</a>
+            <a href ="#">Ambulance service</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <h4>Phone numbers:</h4>
+            <h4>+94(0)11 2277810</h4>
+            <h4>+94(0)11 2277810</h4>
+            <h4>E-mail:</h4>
+            <a href="mailto:Contact@medon.lk" style="color:blue;">Contact@medon.lk</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social media</h2>
+            <a href ="#">Instragram</a>
+            <a href ="#">Linkedin</a>
+            <a href ="#">Youtube</a>
+            <a href ="#">Twitter</a>
+            <a href ="#">Facebook</a>
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="enter your email" id="footer-email">
+            <a href="#">
+            <input type="button" value="sign up" id="footer-email-btn">
+        </a>
+        </div>
+        <center><h4>&copy MEDON PVT LTD. ALL RIGHTS RESERVED.</br>DEVELOPED BY MEDON </h4></center>
+    </div>
+    
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

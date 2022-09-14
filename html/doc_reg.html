@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Medon online medical portal </title>
+<link rel="stylesheet" href="../css/styledr.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <center><img src="../images/logo.jpg" width="80px;" height="60px;"></center>
+<div class="menu-bar">
+ 
+
+<ul> 
+<li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-address-book"></i> About Us </a></li>
+<li><a href="#"><i class="fa fa-circle"></i> Services</a>
+<div class="sub-menu-1">
+<ul>
+    <li><a href="#">Doc-chenneling</a></li>
+    <li><a href="#">Lab report</a></li>
+    <li><a href="#">Ambulance service</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><i class="fa fa-commenting-o"></i> Reviews </a> </li>
+
+<li><a href="#"><i class="fa fa-phone"></i> Contact</a>  </li>
+</ul>
+</div>
+</br>
+<!--footer start-->
+
+
+
+
+<Div class="docReg">
+    <h1><center>DOCTOR REGISTRATION FORM</center></h1>
+        <br>
+     <div class="docReg">
+     <div class="heading"><h2 style="background-color:cornflowerblue; text-align: center;"> Personal Informations </h2><br><br>
+        <form action="../php/doc_regi.php" method="POST">
+          <div class="card-details">
+              <div class="card-box">
+                  <spn class="details">Full Name :</spn>
+                  <input type="text" style="width:700px;" name="aa" placeholder="HEWAGE SANDEEPA DE SILVA" required><br><br>
+              </div><br>
+
+              <spn class="details">Name with initials :</spn>
+              <input type="text" style="width:500px;" name="name1" placeholder="H.S. DE SILVA" required><br><br>
+          </div><br>
+
+          <spn class="details">Frequently using name :</spn>
+          <input type="text" style="width:500px;" name="name3" placeholder="H.SANDEEPA DE SILVA" required><br><br>
+         </div><br>
+
+            
+
+              <div class="card-box">
+               <spn class="details">Age :</spn>
+               <input type="Number" name="bb" placeholder="27" required><br><br>
+           </div><br>
+
+           <div class="circal-form">
+            <spn class="circal-title">Gender :</spn>
+            
+              <input type="radio" name="gg" value="male">male
+              <input type="radio" name="gg" value="female">female 
+             
+            </div>
+            <br>
+            <br>
+
+            <div class="heading"><h2 style="background-color:rgb(15, 228, 244); text-align: center;"> Contact Details </h2><br><br>
+
+           
+            
+           <div class="card-box">
+               <spn class="details">Email :</spn>
+               <input type="email" style="width:500px;"name="email" placeholder="Enter your email" required><br><br>
+           </div><br>
+
+           <div class="card-box">
+               <spn class="details">Contact number :</spn>
+               <input type="number"  name="contact" placeholder="0112277552" required>
+           </div>
+           <br>
+           <br>
+
+
+           <div class="card-box">
+            <spn class="details">Permanent Address :</spn>
+            <input type="text" name="address" style="width:450px;" placeholder="77,arachchikanda,galle" required>
+        
+
+           <br><br><br><br>
+
+          </div>
+         </div>  
+       </div>   
+          <h2 style="background:papayawhip"><center>Information of the Degree</center></h2><br>
+          <div class="Edudet">
+              
+                
+                <div class="details">Select the Degree / Degrees :</div><br>
+                  <div class="category">
+                    
+                    <input type="hidden" value="NO" name="MBBS" >
+                    <input type="checkbox" value="YES" name="MBBS" >
+                    <label for="MBBS">MBBS</label><br>
+                    
+                    <input type="hidden" value="NO" name="MD" >
+                    <input type="checkbox" value="YES" name="MD" >
+                    <label for="MD">M.D</label><br>
+  
+                    <input type="hidden" value="NO" name="PHD" >
+                    <input type="checkbox" value="YES" name="PHD" >
+                    <label for="PHD">PhD</label><br>
+  
+                    <input type="hidden" value="NO" name="MPHIL" >
+                    <input type="checkbox" value="YES" name="MPHIL" >
+                    <label for="ENT">MPhil</label><br>
+  
+                    <input type="hidden" value="NO" name="OTHER" >
+                    <input type="checkbox" value="YES" name="OTHER" >
+                    <label for="ENT">OTHER</label><br>
+                   
+                   </div> <br>
+                    
+                   <div class="card-box">
+                       <spn class="details">Name of the University / Universities:</spn><br>
+                       <input type="text" style="width:400px;" placeholder="University OR Collage" name="uni" required>
+                   </div><br>
+               
+                   <div class="choose file">
+                      <div class="Degree cetifice"> 
+                        <p>Upload your Degree Cetificates as .zip folder</p>
+                        <input type="file" id="my file" name="hh" >
+                    </div>  <br><br><br>
+                   
+                    <h2  style="background-color:deeppink"><center>Professional Details</center></h2><br>
+                    
+                    
+
+                        
+                            <div class="card-box">
+                                <spn class="details">Registration Number issued by the SLMC</spn><br>
+                                 <input type="text" name=" ee" placeholder="Registration Number" required>
+                             </div>  <br>
+                             
+                            <div class="choose file">
+                                <div class="Degree cetifice"> 
+                                    <p>Photography of the Doctor's ID:</p>
+                                    <input type="file" id="nic" name="nic" >
+                                </div><br>
+                        
+                           
+                         <div class="card-box">
+                            <spn class="details">Currently working hospital :</spn><br>
+                            <input type="text" name="dd" placeholder="hospital" required>
+                         </div><br>
+                    
+                           
+                             <spn class="Number">Specilization feild :</spn><br>
+                             
+                             <select special="feild" name="ff">
+                                  <option value="Neurologist">Neurologist</opttion>
+                                  <option  value="Cardiologists">Cardiologists</option>
+                                  <option value="Family Physician">Family Physician</option>
+                                  <option value="Pediatrician">Pediatrician</option>
+                                  <option value="Gastroenterologist">Gastroenterologist</option>
+                             </select><br></br>
+                             
+                            <br><br>
+
+                            <h2  style="background-color:rgb(255, 181, 20)"><center>Preferred consultantation details</center></h2><br>
+
+                            <div class="details">Select one or more preferred consultant methods :</div><br>
+                            <Div Class="Category">
+                    
+                                <Input Type="Checkbox" Value="Yes " Name="Amc" >
+                                <Label For="Amc">Onsite - Arachchikanda Medical Center</Label><Br>
+              
+                                <Input Type="Checkbox" Value="Yes " Name="Hmc" >
+                                <Label For="Hmc">Onsite - Hikkaduwa Medical Center</Label><Br>
+              
+                                <Input Type="Checkbox" Value="Yes " Name="Ovc" >
+                                <Label For="Ovc">On Voice Call</Label><Br>
+              
+                                <Input Type="Checkbox" Value="Yes " Name="Vcz" >
+                                <Label For="Vcz">Video Calls / Zoom </Label><Br>
+              
+                                <Input Type="Checkbox" Value="Yes " Name="Hm" >
+                                <Label For="Hm">Home Visit(Nearest Cases)</Label><Br>
+                               
+                               </div>
+                                <Br>
+
+                                <div class="card-box">
+                                    <spn class="details">Expecting counsulting fee from the one patient (from Rupees) :</spn><br>
+                                    <input type="number" name="fee" placeholder="1700.00" required>
+                                 </div><br>
+                        
+                             
+                              
+                           
+                    
+                      
+                                    
+                          <br>
+
+                          <label><center>I read and agree to the terms and condition of the medon online medical portal</label>
+                          <input type="checkbox" required></center>
+
+                          <br>
+
+                       <div class="submit">
+                          <input type="submit" value="Submit">
+                          
+                        <input type="reset"  value="reset ">
+                       </div>
+                   </form>             
+
+
+
+<!--footer start-->
+
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <a href ="#">Blog</a>
+            <a href ="#">Privacy policy</a>
+            <a href ="#">Doc-chenneling</a>
+            <a href ="#">Lab Service</a>
+            <a href ="#">Ambulance service</a>
+        </div>
+        <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <h4>Phone numbers:</h4>
+            <h4>+94(0)11 2277810</h4>
+            <h4>+94(0)11 2277810</h4>
+            <h4>E-mail:</h4>
+            <a href="mailto:Contact@medon.lk" style="color:blue;">Contact@medon.lk</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social media</h2>
+            <a href ="#">Instragram</a>
+            <a href ="#">Linkedin</a>
+            <a href ="#">Youtube</a>
+            <a href ="#">Twitter</a>
+            <a href ="#">Facebook</a>
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="enter your email" id="footer-email">
+            <input type="submit" value="sign up" id="footer-email-btn">
+        </div>
+        <center><h4>&copy MEDON PVT LTD. ALL RIGHTS RESERVED.</br>DEVELOPED BY MEDON </h4></center>
+    </div>
+    
+</div>
+</body>
+</html>
